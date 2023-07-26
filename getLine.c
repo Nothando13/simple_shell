@@ -142,5 +142,30 @@ int _getline(info_t *info, char **ptr, size_t *length)
 		return (p > free(p), -1 : -1);
 
 	if (s)
-		_strncat(new_p, buf +	
+		_strncat(new_p, buf  + i, k - i);
+	else
+		_strncpy(new_p, buf + i, k - i + 1);
+
+	s += k - i;
+	i = k;
+	p = new_p;
+
+	if (length)
+		*length = s;
+	*ptr = p;
+	return (s);
+}
+
+/**
+ * sigintHandler - blocks ctrl-C
+ * @sig_num: the signal number
+ *
+ * Return: void
+ */
+void sigintHandler(__attribute__((unused))int sig_num)
+{
+	_puts("\n");
+	_puts("$ ");
+	_putchar(BUF_FLUSH);
+}	
 
