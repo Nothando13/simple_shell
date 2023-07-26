@@ -209,7 +209,10 @@ int _setenv(info_t *, char *, char *);
 char *get_history_file(info_t *info);
 int write_history(info_t *info);
 int read_history(info_t *info);
-int build_history_/* toem_tokenizer.c */
+int build_history__list(info_t *info, char *buf, int linecount);
+int renumber_history(info_t *info);
+
+/* toem_tokenizer.c */
 char **strtow(char *, char *);
 char **strtow2(char *, char);
 
