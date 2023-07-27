@@ -78,13 +78,12 @@ int _mycd(info_t *info)
 		_setenv(info, "PWD", getcwd(buffer, 1024));
 	}
 	return (0);
-
 }
 
 /**
  * _myhelp - changes the current dirctory of the process
  * @info: Structure containing potential arguments. Used to maintain
- * 	    constant function prototype.
+ * constant function prototype.
  * Return: Always 0
  */
 int _myhelp(info_t *info)

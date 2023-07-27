@@ -12,10 +12,10 @@ int interactive(info_t *info)
 }
 
 /**
- * is_delim - checks if charcter is a delimeter
+ * is_delim - checks if character is a delimeter
  * @c: the char to check
  * @delim: the delimeter string
- * Returns: 1 id true, 0 if false
+ * Return: 1 id true, 0 if false
  */
 int is_delim(char c, char *delim)
 {
@@ -26,7 +26,7 @@ int is_delim(char c, char *delim)
 }
 
 /**
- * _isalap - checks for alphabethic character
+ * _isalpha - checks for alphabethic character
  * @c: The character to input
  * Return: 1 if c is alphabetic, 0 otherwise
  */

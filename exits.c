@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- **_strncy - copies a string
+ **_strncpy - copies a string
  *@dest: the destination string to be copied to
  *@src: the source string
  *@n: the amount of characters to be copied
@@ -56,7 +56,8 @@ j = 0;
 		dest[i] = '\0';
 	return (s);
 }
-/** _strnchr - locates a character in string
+/**
+ * *_strchr - locates a character in string
  * @s: the string to be parsed
  * @c: the character to look for
  * Return: (s) a pointer to the memory area s
